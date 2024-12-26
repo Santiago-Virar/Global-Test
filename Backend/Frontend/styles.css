@@ -1,0 +1,104 @@
+/* Estilos para el contenedor principal */
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para los filtros */
+#filters {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#filters input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #1f1f1f;
+    background-color: #fafafa;
+    font-size: 14px;
+}
+
+#filters input::placeholder {
+    color: #888;
+}
+
+/* Estilos para la tabla */
+#customer-grid {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+#customer-grid th {
+    padding: 10px;
+    background-color: #BE2A3F;
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;
+}
+
+#customer-grid th.asc::after {
+    content: "↑";
+    position: absolute;
+    right: 10px;
+}
+
+#customer-grid th.desc::after {
+    content: "↓";
+    position: absolute;
+    right: 10px;
+}
+
+#customer-grid td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#customer-grid tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos para la paginación */
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#pagination button {
+    padding: 12px 20px;
+    font-size: 14px;
+    background-color: #BE2A3F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pagination button:hover {
+    background-color: #b82f43;
+}
+
+#pagination button:disabled {
+    background-color: #ccc;
+}
+
+/* Estilo para el mensaje "No hay resultados" */
+#customer-grid tbody tr.no-results td {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}

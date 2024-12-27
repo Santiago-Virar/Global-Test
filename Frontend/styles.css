@@ -1,0 +1,237 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#filters {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#filters input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#customer-grid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#customer-grid th, #customer-grid td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#customer-grid th {
+    background-color: #BE2A3F;
+    color: white;
+    cursor: pointer;
+}
+
+#customer-grid tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #BE2A3F;
+    color: white;
+    cursor: pointer;
+}
+
+#pagination button:disabled {
+    background-color: #ccc;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content, .modal-content-update {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.modal-content input, .modal-content-update input {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button, .modal-content-update button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#save-customer-btn, #save-customer-btn-update {
+    background-color: #28a745;
+    color: white;
+}
+
+#close-modal-btn, #close-modal-btn-update {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+
+#add-customer-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-customer-btn:hover {
+    background-color: #218838;
+}
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.delete-btn i, .update-btn i {
+    font-size: 20px;
+    color: #BE2A3F;  
+    cursor: pointer; 
+}
+
+.delete-btn i:hover , .update-btn i:hover{
+    color: #d9534f; 
+}
+
+
+#confirm-delete-modal.hidden {
+    display: none;
+}
+
+#confirm-delete-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirm-delete-modal .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+#confirm-delete-modal h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#confirm-delete-modal p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#confirm-delete-modal .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#confirm-delete-modal .btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+#confirm-delete-modal .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    margin-left: 10px;
+}
+
+#confirm-delete-modal .btn:hover {
+    opacity: 0.9;
+}
+
+
+

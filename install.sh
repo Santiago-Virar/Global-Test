@@ -16,8 +16,8 @@ cd ..
 
 # Navegar al frontend y ejecutar npm install y npm start
 echo "Instalando dependencias y corriendo el servidor frontend..."
-cd frontend
+cd firstProyect
 npm install
-npm start &
+npm run dev &
 
 echo "Instalación y servidores en ejecución."

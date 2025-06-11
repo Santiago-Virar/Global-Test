@@ -1,0 +1,11 @@
+{
+  "name": "trabajoglobalassist",
+  "version": "1.0.0",
+  "description": "1. **Clonar el repositorio:**\r    ```bash\r    git clone [URL_DEL_REPOSITORIO]\r    bash intall.sh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
